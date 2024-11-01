@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Conversión de Unidades</title>
+    <!-- Importar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+    <h1 class="mb-4">Conversión de Unidades</h1>
+    <form id="conversionForm" class="needs-validation" novalidate>
+        <!-- Conversión de Km a m -->
+        <div class="mb-3">
+            <label for="km" class="form-label">Kilómetros:</label>
+            <input type="number" class="form-control" id="km" required>
+            <div class="invalid-feedback">Ingrese un valor numérico válido.</div>
+            <button type="button" class="btn btn-primary mt-2" onclick="convertirKmAm()">Convertir a metros</button>
+            <input type="text" class="form-control mt-2" id="resultadoKmAm" readonly>
+        </div>
+        
+        <!-- Conversión de m a cm -->
+        <div class="mb-3">
+            <label for="m" class="form-label">Metros:</label>
+            <input type="number" class="form-control" id="m" required>
+            <div class="invalid-feedback">Ingrese un valor numérico válido.</div>
+            <button type="button" class="btn btn-primary mt-2" onclick="convertirMaCm()">Convertir a centímetros</button>
+            <input type="text" class="form-control mt-2" id="resultadoMaCm" readonly>
+        </div>
+
+        <!-- Conversión de ft a pulgadas -->
+        <div class="mb-3">
+            <label for="ft" class="form-label">Pies (ft):</label>
+            <input type="number" class="form-control" id="ft" required>
+            <div class="invalid-feedback">Ingrese un valor numérico válido.</div>
+            <button type="button" class="btn btn-primary mt-2" onclick="convertirFtAPulg()">Convertir a pulgadas</button>
+            <input type="text" class="form-control mt-2" id="resultadoFtAPulg" readonly>
+        </div>
+
+        <!-- Conversión de yardas a pulgadas -->
+        <div class="mb-3">
+            <label for="yardas" class="form-label">Yardas:</label>
+            <input type="number" class="form-control" id="yardas" required>
+            <div class="invalid-feedback">Ingrese un valor numérico válido.</div>
+            <button type="button" class="btn btn-primary mt-2" onclick="convertirYardasAPulg()">Convertir a pulgadas</button>
+            <input type="text" class="form-control mt-2" id="resultadoYardasAPulg" readonly>
+        </div>
+    </form>
+
+    <!-- Importar el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
